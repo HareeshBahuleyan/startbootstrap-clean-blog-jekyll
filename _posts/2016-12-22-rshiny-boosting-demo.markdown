@@ -103,7 +103,7 @@ shinyApp(ui <span style="color:#ff5600">=</span> ui, server <span style="color:#
 So if you have done all the coding part correctly, this is how the application should look like:
 <center>
 <a href="#">
-    <img src="{{ site.baseurl }}/img/Post-5-Boosting-RShiny/app-screenshot.png" alt="Boosting Application">
+    <img src="{{ site.baseurl }}/img/Post-4-Boosting-RShiny/app-screenshot.png" alt="Boosting Application" width="100%" height="100%">
 </a>
 </center>
 That was pretty simple, right? A beautiful application, up and running in almost no time. The other cool thing is that shiny allows you to publish and share your app with others for free. You just need to sign up on their <a href="https://www.shinyapps.io/"> website</a>. And, this app of mine can be found on <a href="https://hareesh.shinyapps.io/gradient_boosting/"> here</a>.
