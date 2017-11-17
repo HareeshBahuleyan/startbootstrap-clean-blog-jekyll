@@ -4,10 +4,10 @@ title:      "Linear Regression Assumptions"
 subtitle:   "Revisiting the assumptions in a linear regression model and looking at the remedial measures"
 date:       2017-01-04 12:00:00
 author:     "Hareesh Bahuleyan"
-header-img: "img/post-header.jpg"
+background: "/img/post-header.jpg"
 ---
 
-<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
 
 <script type="text/javascript"
    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
@@ -15,7 +15,7 @@ header-img: "img/post-header.jpg"
 
 <style type="text/css">
 	p {
-	    font-size: 20px;
+	    font-size: 17px;
 	    font-family: 'Raleway', sans-serif;
 	    text-align: justify;
 	}

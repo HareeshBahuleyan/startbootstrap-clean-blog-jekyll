@@ -4,14 +4,14 @@ title:      "Data Science Jobs (Part I - Web Scraping)"
 subtitle:   "In this first part, we learn how to scrape information from HTML Pages with the help of some Python libraries"
 date:       2016-11-26 12:00:00
 author:     "Hareesh Bahuleyan"
-header-img: "img/post-header.jpg"
+background: "/img/post-header.jpg"
 ---
 
-<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
 
 <style type="text/css">
 	p {
-	    font-size: 20px;
+	    font-size: 17px;
 	    font-family: 'Raleway', sans-serif;
 	    text-align: justify;
 	}

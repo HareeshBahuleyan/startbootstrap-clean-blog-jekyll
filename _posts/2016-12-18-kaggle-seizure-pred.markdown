@@ -4,14 +4,14 @@ title:      "Kaggle Seizure Prediction Competition"
 subtitle:   "Description of the feature extraction and modelling technique used for seizure prediction competition hosted on Kaggle by the University of Melbourne"
 date:       2016-12-18 12:00:00
 author:     "Hareesh Bahuleyan"
-header-img: "img/seizure-post.jpg"
+background: "/img/seizure-post.jpg"
 ---
 
-<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
 
 <style type="text/css">
 	p {
-	    font-size: 20px;
+	    font-size: 17px;
 	    font-family: 'Raleway', sans-serif;
 	    text-align: justify;
 	}

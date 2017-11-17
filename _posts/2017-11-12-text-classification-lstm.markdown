@@ -4,14 +4,14 @@ title:      "Text Classification using LSTM Networks"
 subtitle:   "Carry out sentiment analysis on the movie review dataset using a basic LSTM"
 date:       2017-11-12 12:00:00
 author:     "Hareesh Bahuleyan"
-header-img: "img/img-sentiment-analysis.jpg"
+background: "/img/img-sentiment-analysis.jpg"
 ---
 
-<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
 
 <style type="text/css">
 	p {
-	    font-size: 20px;
+	    font-size: 17px;
 	    font-family: 'Raleway', sans-serif;
 	    text-align: justify;
 	}
@@ -124,7 +124,7 @@ model<span style="color: #666666">.</span>add(LSTM(LSTM_DIM, return_sequences<sp
 model<span style="color: #666666">.</span>add(Dense(<span style="color: #666666">1</span>, activation<span style="color: #666666">=</span><span style="color: #BB4444">&#39;sigmoid&#39;</span>, name<span style="color: #666666">=</span><span style="color: #BB4444">&#39;output_layer&#39;</span>))
 </pre></div>
 
-The first layer is an Embedding layer, which takes as input a sequence of integer indices and returns a matrix of word embeddings. The next layer is an LSTM which processes the sequence of word vectors. Here, the output of the LSTM network is 128-dimensional vector which is fed into a dense network with a sigmoid activation in order to output a probability value. This probability can then be rounded off to get the predicted class label, 0 or 1. The <code>model.summary()</code>> function is useful to verify the model in terms of what goes as inputs and outputs and what are the shaped of those. We also get an idea of the number of parameters that the model has to train and optimize. In this case, the non-trainable parameters are the word-embeddings.
+The first layer is an Embedding layer, which takes as input a sequence of integer indices and returns a matrix of word embeddings. The next layer is an LSTM which processes the sequence of word vectors. Here, the output of the LSTM network is 128-dimensional vector which is fed into a dense network with a sigmoid activation in order to output a probability value. This probability can then be rounded off to get the predicted class label, 0 or 1. The <code>model.summary()</code> function is useful to verify the model in terms of what goes as inputs and outputs and what are the shaped of those. We also get an idea of the number of parameters that the model has to train and optimize. In this case, the non-trainable parameters are the word-embeddings.
 
 <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">_________________________________________________________________
 Layer (<span style="color: #AA22FF">type</span>)                 Output Shape              Param    
