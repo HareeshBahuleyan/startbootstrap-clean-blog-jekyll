@@ -44,13 +44,13 @@ Prior to data modelling, it is always a good idea to do some pre-processing. The
 
 <center>
 <a href="#">
-    <img src="{{ site.baseurl }}/img/Post-3-Seizure_Prediction/before_resample.png" alt="Dataframe Structure">
+    <img src="{{ site.baseurl }}/img/Post-3-Seizure_Prediction/before_resample.png" alt="Dataframe Structure" width="100%" height="100%">
 </a>
 <b>Figure:</b> Voltage Fluctuations in the original file</center>
 
 <center>
 <a href="#">
-    <img src="{{ site.baseurl }}/img/Post-3-Seizure_Prediction/after_resample.png" alt="Dataframe Structure">
+    <img src="{{ site.baseurl }}/img/Post-3-Seizure_Prediction/after_resample.png" alt="Dataframe Structure" width="100%" height="100%">
 </a>
 <b>Figure:</b> Voltage Fluctuations in the resample file</center>
 

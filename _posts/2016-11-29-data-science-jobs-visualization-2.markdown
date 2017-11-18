@@ -33,9 +33,9 @@ We had saved the data after scaping as a pickle object (cPickle library). Lets s
     naukri_df <span style="color:#ff5600">=</span> pickle.load(f) 
 </pre>
 
-The dataframe has a structure as below:
+The dataframe has a structure as below:<br>
 <a href="#">
-    <img src="{{ site.baseurl }}/img/Post-2-Jobs_Visualization/df-image.png" alt="Dataframe Structure">
+    <img src="{{ site.baseurl }}/img/Post-2-Jobs_Visualization/df-image.png" alt="Dataframe Structure" width="100%" height="100%">
 </a>
 
 We can first analyze the location column. The question is - which city in India has the most data science job openings? The pandas dataframe function value_counts() can be used to get the number of jobs per city. 
@@ -133,7 +133,7 @@ plt.show()
 </pre>
 
 <a href="#">
-    <img src="{{ site.baseurl }}/img/Post-2-Jobs_Visualization/location.png" alt="Jobs by Location">
+    <img src="{{ site.baseurl }}/img/Post-2-Jobs_Visualization/location.png" alt="Jobs by Location" width="100%" height="100%">
 </a>
 
 Next let us look at the companies who do maximum hiring in this sector. As seen from the plot below, the top blue chip companies companies like Microsoft, Amazon and GE are among the top recruiters. Some recruiters wish to stay confidential and some others do hiring through consultants like Premium-Jobs.
@@ -145,7 +145,7 @@ plt.show()
 </pre>
 
 <a href="#">
-    <img src="{{ site.baseurl }}/img/Post-2-Jobs_Visualization/company.png" alt="Jobs by Recruiters">
+    <img src="{{ site.baseurl }}/img/Post-2-Jobs_Visualization/company.png" alt="Jobs by Recruiters" width="100%" height="100%">
 </a>
 
 We have a column for salary and one for experience. What can we make of this? Well, we can see how correlated salary with experience. Lets do this through a scatter plot. However, only a small percentage of the recruiters have explicitly provided the salary. I have made use of only those records which give the salary range. I carried out some string operations in Python to clean the data. For example, a record may have a salary range of INR 5,00,000-9,00,000 and experience range of 3-5 years. For plotting purposes, we need a single value and not a range. So, I calculate the mean value, which are INR 7,00,000 and 4 years respectively, in the above example. 
@@ -169,7 +169,7 @@ plt.show()
 </pre>
 
 <a href="#">
-    <img src="{{ site.baseurl }}/img/Post-2-Jobs_Visualization/experience.png" alt="Salary vs Experience">
+    <img src="{{ site.baseurl }}/img/Post-2-Jobs_Visualization/experience.png" alt="Salary vs Experience" width="100%" height="100%">
 </a>
 
 As evident, the salary offered increases with experience. The pearson correlation coefficient is 0.65. Candidates with over 12 years are even offered more than INR 30,00,000 per annum, which is pretty interesting. The graph also depicts the histograms of both salary and experience. Both of these variables have distributions which are skewed towards the lower range of values.
@@ -200,7 +200,7 @@ plt.show()
 </pre>
 
 <a href="#">
-    <img src="{{ site.baseurl }}/img/Post-2-Jobs_Visualization/skills.png" alt="Technical Skills">
+    <img src="{{ site.baseurl }}/img/Post-2-Jobs_Visualization/skills.png" alt="Technical Skills" width="100%" height="100%">
 </a>
 
 And next, we have the last visualization for this post. Moving away from the typical charts and plots, let us do something more exciting. Here, I present to you the wordcloud. A WordCloud is essentially a plot of words present in a document, sized according to their frequency of occurence. I have used the wordcloud library which can be found <a href="https://github.com/amueller/word_cloud">here</a>. And the document that I feed into this function is a string created by concatenating all the 'Job Description' values from our table. You can see for yourself the words that are most frequently used in data science role descriptions.
@@ -219,7 +219,7 @@ plt.show()
 </pre>
 
 <a href="#">
-    <img src="{{ site.baseurl }}/img/Post-2-Jobs_Visualization/wordcloud.png" alt="WordCloud">
+    <img src="{{ site.baseurl }}/img/Post-2-Jobs_Visualization/wordcloud.png" alt="WordCloud" width="100%" height="100%">
 </a>
 
 Thats all folks! I hope you have found some of these job market insights useful. All of the data and code can be found on my <a href="https://github.com/HareeshBahuleyan/naukri-web-scraping/">github repository</a> in the form of an IPython notebook.

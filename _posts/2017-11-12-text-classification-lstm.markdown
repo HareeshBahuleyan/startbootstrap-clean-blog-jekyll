@@ -168,13 +168,17 @@ model<span style="color: #666666">.</span>fit(X_train, y_train,
 <span style="color: #AA22FF; font-weight: bold">print</span>(<span style="color: #BB4444">&quot;Accuracy on Test Set = {0:4.3f}&quot;</span><span style="color: #666666">.</span>format(acc))
 </pre></div>
 
-On evaluating the model, I get an accuracy of 80.4%, which is decent considering the fact the the network that I used is pretty basic. 
+On evaluating the model, I get an accuracy of 80.4%, which is decent considering the fact the the network that I used is pretty rudimentary. 
 
 Next, lets try modifying the network above with the following tricks, in the hope of achieving a better performance:
-- **Bi-directional LSTM:**
-- **Batch-normalization:**
-- **Dropout:**
-- **Trainable Embeddings:**
+
+- **<u>Bi-directional LSTM:</u>** The LSTM that I used reads the sequence in the forward direction, i.e., from the first word to the last word. We can try reading the sentence in a reverse fashion as well (which has been proven to do well in tasks such as POS tagging). In the bidirectional LSTM, the final hidden states of the foward and the backward LSTMs are concatenated and passed on to the downstream network.  
+
+- **<u>Batch-normalization:</u>** This is a method introduced by <a href="https://arxiv.org/pdf/1502.03167.pdf">Ioffe & Szegedy</a>, that helps speed up the training process and simultaneously reduce over-fitting. To prevent instability of the network during training, we usually normalize the inputs to the model by subtract the mean value and dividing by the standard deviation. With batch-normalization, the output of a previous layer is normalized in the same manner, before it is fed into the next layer. For feed-forward networks, batch-normalization is carried out before applying the activation function.  
+
+- **<u>Dropout:</u>** A simple yet powerful regularization technique, that states that some nodes in the network can be ignored during some iterations of training. That is, a given node will participate in the forward and backward pass (weight update), with the desired keep probability (which is <code>1.0 - dropout_probability</code>). The idea is that during training, the network learns to predict using <u>only a subset of the weights</u>. This would intuitively mean that during test time, when it can use <u>the entire set of weights</u>, it should have a better predicting power. 
+
+- **<u>Trainable Embeddings:</u>** In the basic model, the pre-trained word embeddings were used as is. However, we have an option to allow even the word embeddings to be trainable parameters, i.e., they embeddings are adjusted during the gradient descent procedure. One needs to be aware that setting <code>trainable=True</code> can result in the word embeddings tuned to overfit on the training data and perform poorly on the validation set.
 
 The code has been posted on <a href="https://github.com/HareeshBahuleyan/deeplearning-tutorials">my Github</a>. The accuracy increased to 81.5%, the performance improvement was not as much as I expected inspite of a more complicated network. If you are interested, you can play around with some of these parameters and see its effect on validation accuracy. 
 

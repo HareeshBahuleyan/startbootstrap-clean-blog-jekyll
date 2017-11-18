@@ -124,7 +124,7 @@ naukri_df <span style="color: #ff7800;">=</span> naukri_df.reindex(columns<span 
 </pre>
 
 <a href="#">
-    <img src="{{ site.baseurl }}/img/Post-1-Web_Scraping/df-image.png" alt="Dataframe Structure">
+    <img src="{{ site.baseurl }}/img/Post-1-Web_Scraping/df-image.png" alt="Dataframe Structure" width="100%" height="100%">
 </a>
 
 We need to do this for all the data science job postings on the website. Lets first check the total number of machine learning jobs posted on the site. This information is present within the tag on the top of the page: div class="count".
